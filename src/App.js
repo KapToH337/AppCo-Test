@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+
+import { Main } from './Main';
+
 import './App.css';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+      </style>
+
+      <Switch>
+        <Route path="/" exact>
+          <Main />
+        </Route>
+        <Route path="/users">
+          <h1>Hello</h1>
+        </Route>
+      </Switch>
+    </>
   );
 }
-
-export default App;
