@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/AppCo-Test/static/css/main.4d3f7e6a.chunk.css",
+    "main.js": "/AppCo-Test/static/js/main.e3e7a717.chunk.js",
+    "main.js.map": "/AppCo-Test/static/js/main.e3e7a717.chunk.js.map",
+    "runtime-main.js": "/AppCo-Test/static/js/runtime-main.5af7378b.js",
+    "runtime-main.js.map": "/AppCo-Test/static/js/runtime-main.5af7378b.js.map",
+    "static/js/2.9de90458.chunk.js": "/AppCo-Test/static/js/2.9de90458.chunk.js",
+    "static/js/2.9de90458.chunk.js.map": "/AppCo-Test/static/js/2.9de90458.chunk.js.map",
+    "index.html": "/AppCo-Test/index.html",
+    "static/css/main.4d3f7e6a.chunk.css.map": "/AppCo-Test/static/css/main.4d3f7e6a.chunk.css.map",
+    "static/js/2.9de90458.chunk.js.LICENSE.txt": "/AppCo-Test/static/js/2.9de90458.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/AppCo-Test/static/media/mobile.8cf31492.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5af7378b.js",
+    "static/js/2.9de90458.chunk.js",
+    "static/css/main.4d3f7e6a.chunk.css",
+    "static/js/main.e3e7a717.chunk.js"
+  ]
+}
