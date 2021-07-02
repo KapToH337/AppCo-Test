@@ -1,0 +1,162 @@
+.stats {
+
+  &__main {
+    margin: 16px 0 0 130px;
+  }
+
+  &__main-home,
+  &__main-stats,
+  &__main-title,
+  &__table-first,
+  &__table-last,
+  &__table-headIt,
+  &__table-bodyIt,
+  &__buttons-disable {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  &__main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+
+    gap: 8px;
+  }
+
+  &__main-home,
+  &__main-stats {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #ccc;
+  }
+
+  &__main-stats {
+    color: #3a80ba;
+  }
+
+  &__main-line {
+    background-image: url(./images/lineUp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 8px;
+    height: 14px;
+  }
+
+  &__main-title {
+    margin-top: 24px;
+
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #1a1a1a;
+  }
+
+  &__table {
+    margin-top: 16px;
+  }
+
+  &__table-head,
+  &__table-body {
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+
+    background-color: #3a80ba;
+    color: #fff;
+  }
+
+  &__table-first {
+    border-radius: 10px 0 0 0;
+  }
+
+  &__table-last {
+    border-radius: 0 10px 0 0;
+  }
+
+  &__table-first,
+  &__table-last,
+  &__table-headIt {
+    padding: 14px 24px;
+  }
+
+  &__table-body {
+    background-color: #fff;
+    color: #1a1a1a;
+  }
+
+  &__table-white {
+    background-color: #fbfbfb;
+  }
+
+  &__table-gray {
+    background-color: #f1f1f1;
+  }
+
+  &__table-bodyIt {
+    padding: 6px 0 6px 24px;
+  }
+
+  &__buttons {
+    margin-top: 24px;
+    margin-left: 380px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 24px;
+  }
+
+  &__buttons-nav {
+    display: flex;
+    flex-direction: row;
+
+    gap: 8px;
+  }
+
+  &__buttons-disable {
+    padding: 14px 21px;
+
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1a1a1a;
+
+    border: 2px solid #f1f1f1;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  &__buttons-active {
+    background: #3A80BA;
+  }
+
+  &__buttons-left,
+  &__buttons-right,
+  .disableR,
+  .disableL {
+    background-image: url(./images/lineDown.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 17px;
+    height: 28px;
+  }
+
+  .disableR,
+  .disableL {
+    background-image: url(./images/lineNoWork.png);
+  }
+
+  &__buttons-left,
+  .disableR {
+    transform: scale(-1, 1);
+  }
+}

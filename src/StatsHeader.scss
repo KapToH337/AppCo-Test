@@ -1,0 +1,22 @@
+.stats {
+  margin: 0;
+
+  &__header {
+    background-color: #3a80ba;
+  }
+
+  &__header-title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  &__header-title {
+    padding: 10px 0 13px 130px;
+
+    font-size: 40px;
+    line-height: 49px;
+  
+    color: #fff;
+  }
+}

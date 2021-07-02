@@ -1,24 +1,28 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
-import { Main } from './Main';
+import { Home } from './Main';
+import { Stats } from './Stats';
 
-import './App.css';
+import './App.scss';
 
 export const App = () => {
   return (
     <>
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
       </style>
 
       <Switch>
         <Route path="/" exact>
-          <Main />
+          <Home />
         </Route>
-        <Route path="/users">
-          <h1>Hello</h1>
-        </Route>
+        <Route path="/users/:page" component={Stats} />
+
+        <Redirect path="/home" to="/"></Redirect>
+        <Redirect path="/users" to="/users/1"></Redirect>
+
+        <h1>Page not found</h1>
       </Switch>
     </>
   );

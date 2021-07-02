@@ -1,0 +1,104 @@
+.home {
+
+  &__footer {
+    margin-top: 128px;
+  
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background-image: url(./images/Footer.png);
+    background-repeat: no-repeat;
+    height: 183px;
+  }
+  
+  &__footer-active,
+  &__footer-field,
+  &__footer-button,
+  &__footer-title,
+  &__footer-paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  &__footer-active {
+    margin-top: 26px;
+  
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    color: #b9b9b9;
+  
+    width: 579px;
+    height: 64px;
+  }
+  
+  &__footer-field {
+    margin-top: 26px;
+    padding-left: 19px;
+  
+    font-size: 16px;
+    line-height: 162%;
+  
+    color: #b9b9b9;
+  
+    width: 579px;
+    height: 64px;
+  
+    background: #fff;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  &__footer-field:focus-visible {
+    outline: none;
+  }
+  
+  &__footer-button {
+    position: absolute;
+    top: 30px;
+    right: 434px;
+  
+    text-align: center;
+    font-size: 16px;
+    line-height: 142%;
+    color: #fff;
+  
+    width: 176px;
+    height: 56px;
+  
+    background: #3a80ba;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  &__footer-button:hover {
+    cursor: pointer;
+  }
+  
+  &__footer-content {
+    margin-top: 24px;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    gap: 350px;
+  }
+  
+  &__footer-title {
+    font-size: 32px;
+    line-height: 39px;
+    color: #fff;
+  }
+  
+  &__footer-paragraph {
+    font-size: 16px;
+    line-height: 142%;
+    color: #fff;
+  }
+}
