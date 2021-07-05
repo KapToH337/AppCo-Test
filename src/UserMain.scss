@@ -7,6 +7,8 @@
   &__main-home,
   &__main-stats,
   &__main-title,
+  &__main-title2,
+  &__main-selectP,
   &__table-first,
   &__table-last,
   &__table-headIt,
@@ -48,14 +50,52 @@
     height: 14px;
   }
 
-  &__main-title {
+  &__main-block {
     margin-top: 24px;
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__main-title {
     font-weight: bold;
     font-size: 32px;
     line-height: 39px;
 
     color: #1a1a1a;
+  }
+
+  &__main-title2 {
+    margin-top: 24px;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__main-select {
+    margin-left: 550px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__main-selectP {
+    font-size: 14px;
+    line-height: 17px;
+    color: #444;
+  }
+
+  &__main-selectI {
+    flex-direction: row-reverse;
+
+    border: none;
+  }
+
+  &__main-selectI:focus-visible {
+    outline: none;
   }
 
   &__table {

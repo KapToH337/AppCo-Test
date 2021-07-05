@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 import { Home } from './Main';
@@ -9,12 +9,6 @@ import { UserStats } from './UserStats';
 import './App.scss';
 
 export const App = () => {
-  const [user, setUser] = useState([])
-
-  const findUser = (user) => {
-    setUser(user);
-  }
-
   return (
     <>
       <style>
@@ -25,13 +19,9 @@ export const App = () => {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/users/:page" exact>
-          <Users findUser={findUser} />
-        </Route>
+        <Route path="/users/:page" exact component={Users} />
 
-        <Route path="/users/:page/:userId">
-          <UserStats user={user} />
-        </Route>
+        <Route path="/users/:page/:userId" component={UserStats} />
 
         <Redirect path="/home" to="/"></Redirect>
         <Redirect path="/users" to="/users/page-1"></Redirect>
