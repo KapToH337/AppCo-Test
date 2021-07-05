@@ -1,7 +1,7 @@
-.stats {
+.user {
 
   &__main {
-    margin: 16px 0 0 130px;
+    margin: 16px 0 24px 130px;
   }
 
   &__main-home,
@@ -88,7 +88,6 @@
 
   &__table-body {
     background-color: #fff;
-    color: #1a1a1a;
   }
 
   &__table-white {
@@ -101,6 +100,9 @@
 
   &__table-bodyIt {
     padding: 6px 0 6px 24px;
+
+    color: #1a1a1a;
+    text-decoration: none;
   }
 
   &__buttons {
@@ -135,6 +137,7 @@
   }
 
   &__buttons-active {
+    color: #fff;
     background: #3A80BA;
   }
 

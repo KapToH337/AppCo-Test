@@ -1,0 +1,32 @@
+.user {
+
+  &__footer {
+    padding: 14px 0 14px 130px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: #fff;
+    background-color: #1c3b55;
+
+    gap: 365px;
+  }
+
+  &__footer-title,
+  &__footer-paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  &__footer-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__footer-paragraph {
+    font-size: 16px;
+    line-height: 142%;
+  }
+}

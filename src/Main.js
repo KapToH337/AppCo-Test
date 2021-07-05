@@ -25,7 +25,7 @@ export const Home = () => {
             </p>
             <div className="home__header-button">
               <Link
-                to="/users/1"
+                to="/users/page-1"
                 className="home__header-button-link"
               >
                 Views Stats
@@ -33,9 +33,9 @@ export const Home = () => {
             </div>
           </div>
 
-          <a className="home__header-link" href="#a">
+          <div className="home__header-link">
             <div className="home__header-img"></div>
-          </a>
+          </div>
         </div>
       </header>
 
