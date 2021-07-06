@@ -1,7 +1,9 @@
 .user {
 
   &__main {
-    margin: 16px 0 24px 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__main-home,
@@ -19,13 +21,28 @@
     font-weight: normal;
   }
 
-  &__main-nav {
+  &__main-up {
+    margin-top: 16px;
+    margin-right: 960px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  &__main-nav,
+  &__main-nav2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
 
     gap: 8px;
+  }
+
+  &__main-nav2 {
+    margin-top: 16px;
+    margin-right: 870px;
   }
 
   &__main-home,
@@ -58,7 +75,10 @@
     align-items: center;
   }
 
-  &__main-title {
+  &__main-title,
+  &__main-title2 {
+    margin-top: 24px;
+
     font-weight: bold;
     font-size: 32px;
     line-height: 39px;
@@ -67,6 +87,11 @@
   }
 
   &__main-title2 {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  &__main-titleM {
     margin-top: 24px;
 
     font-weight: bold;
@@ -75,7 +100,7 @@
   }
 
   &__main-select {
-    margin-left: 550px;
+    margin-left: 620px;
 
     display: flex;
     flex-direction: row;
@@ -147,7 +172,6 @@
 
   &__buttons {
     margin-top: 24px;
-    margin-left: 380px;
 
     display: flex;
     flex-direction: row;
@@ -201,5 +225,66 @@
   &__buttons-left,
   .disableR {
     transform: scale(-1, 1);
+  }
+
+  @media (max-width: 1236px) {
+    &__main-up,
+    &__main-nav2 {
+      margin-right: 70%;
+    }
+
+    &__main-select {
+      margin-left: 300px;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    &__main-nav2 {
+      margin-right: 60%;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .media1 {
+      display: none;
+    }
+  }
+
+  @media (max-width: 980px) {
+    &__main-title2 {
+      display: none;
+    }
+
+    &__main-select {
+      margin-left: 0;
+    }
+
+    &__main-nav2 {
+      margin-right: 50%;
+    }
+  }
+
+  @media (max-width: 916px) {
+    .media2 {
+      display: none;
+    }
+
+    &__main-nav2 {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 671px) {
+    .media3 {
+      display: none;
+    }
+
+    &__main-up {
+      margin-right: 50%;
+    }
+
+    &__buttons-disable:last-child {
+      display: none;
+    }
   }
 }

@@ -63,25 +63,27 @@ export const Users = ({ match }) => {
           </header>
 
           <main className="user__main">
-            <div className="user__main-nav">
-              <Link
-                to="/"
-                className="user__main-home"
-              >
-                Main page
-              </Link>
+            <div className="user__main-up">
+              <div className="user__main-nav">
+                <Link
+                  to="/"
+                  className="user__main-home"
+                >
+                  Main page
+                </Link>
 
-              <div className="user__main-line"></div>
+                <div className="user__main-line"></div>
 
-              <Link
-                to="/users/page-1"
-                className="user__main-stats"
-              >
-                User statistics
-              </Link>
+                <Link
+                  to="/users/page-1"
+                  className="user__main-stats"
+                >
+                  User statistics
+                </Link>
+              </div>
+
+              <h2 className="user__main-title">Users statistics</h2>
             </div>
-
-            <h2 className="user__main-title">Users statistics</h2>
 
             <table className="user__table">
               <thead className="user__table-head">
@@ -89,11 +91,36 @@ export const Users = ({ match }) => {
                   <th className="user__table-first">Id</th>
                   <th className="user__table-headIt">First name</th>
                   <th className="user__table-headIt">Last name</th>
-                  <th className="user__table-headIt">Email</th>
-                  <th className="user__table-headIt">Gender</th>
-                  <th className="user__table-headIt">IP address</th>
-                  <th className="user__table-headIt">Total clicks</th>
-                  <th className="user__table-last">Total page views</th>
+                  <th
+                    className="
+                      user__table-headIt
+                      media3
+                    "
+                  >Email</th>
+                  <th
+                    className="
+                      user__table-headIt
+                      media2
+                    "
+                  >Gender</th>
+                  <th
+                    className="
+                      user__table-headIt
+                      media2
+                    "
+                  >IP address</th>
+                  <th
+                    className="
+                      user__table-headIt
+                      media1
+                    "
+                  >Total clicks</th>
+                  <th
+                    className="
+                      user__table-last
+                      media1
+                    "
+                  >Total page views</th>
                 </tr>
               </thead>
               <tbody className="user__table-body">
@@ -129,7 +156,10 @@ export const Users = ({ match }) => {
                     </th>
                     <th>
                       <Link
-                        className="user__table-bodyIt"
+                        className="
+                          user__table-bodyIt
+                          media3
+                        "
                         to={`/users/page-${page}/${user.id}`}
                       >
                         {user.email}
@@ -137,7 +167,10 @@ export const Users = ({ match }) => {
                     </th>
                     <th>
                       <Link
-                        className="user__table-bodyIt"
+                        className="
+                          user__table-bodyIt
+                          media2
+                        "
                         to={`/users/page-${page}/${user.id}`}
                       >
                         {user.gender}
@@ -145,7 +178,10 @@ export const Users = ({ match }) => {
                     </th>
                     <th>
                       <Link
-                        className="user__table-bodyIt"
+                        className="
+                          user__table-bodyIt
+                          media2
+                        "
                         to={`/users/page-${page}/${user.id}`}
                       >
                         {user.ip_address}
@@ -153,7 +189,10 @@ export const Users = ({ match }) => {
                     </th>
                     <th>
                       <Link
-                        className="user__table-bodyIt"
+                        className="
+                          user__table-bodyIt
+                          media1
+                        "
                         to={`/users/page-${page}/${user.id}`}
                       >
                         {findTotalClicks(user.id)}
@@ -161,7 +200,10 @@ export const Users = ({ match }) => {
                     </th>
                     <th>
                       <Link
-                        className="user__table-bodyIt"
+                        className="
+                          user__table-bodyIt
+                          media1
+                        "
                         to={`/users/page-${page}/${user.id}`}
                       >
                         {findTotalViews(user.id)}
@@ -195,9 +237,11 @@ export const Users = ({ match }) => {
           </main>
 
           <footer className="user__footer">
-            <h3 className="user__footer-title">AppCo</h3>
-            <p className="user__footer-paragraph">All rights reserved by ThemeTags</p>
-            <p className="user__footer-paragraph">Copyrights © 2019.</p>
+            <div className="user__footer-block">
+              <h3 className="user__footer-title">AppCo</h3>
+              <p className="user__footer-paragraph">All rights reserved by ThemeTags</p>
+              <p className="user__footer-paragraph">Copyrights © 2019.</p>
+            </div>
           </footer>
         </div>
       )}

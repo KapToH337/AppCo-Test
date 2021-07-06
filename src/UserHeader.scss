@@ -1,21 +1,34 @@
 .user {
 
   &__header {
-    background-color: #3a80ba;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  &__header-title{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    background-color: #3a80ba;
   }
   
   &__header-title {
-    padding: 10px 0 13px 130px;
+    margin-right: 1080px;
+    padding: 10px 0 13px;
 
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 40px;
     line-height: 49px;
   
     color: #fff;
+  }
+
+  @media (max-width: 1236px) {
+    &__header {
+      flex-direction: row;
+      align-items: left;
+    }
+
+    &__header-title {
+      margin-right: 0;
+    }
   }
 }

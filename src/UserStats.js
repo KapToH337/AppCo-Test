@@ -28,6 +28,22 @@ export const UserStats = ({ match }) => {
       {name: stats.date, views: stats.page_views, pv: 2400, amt: 2400}
     ));
 
+  let screen = 1200;
+
+  if (window.innerWidth <= 405) {
+    screen = 200
+  } else if (window.innerWidth <= 605) {
+    screen = 400
+  } else if (window.innerWidth <= 980) {
+    screen = 600;
+  } else if (window.innerWidth <= 1050) {
+    screen = 800;
+  } else if (window.innerWidth <= 1250) {
+    screen = 1000;
+  }
+
+  console.log(window.innerWidth, screen);
+
   return (
     <>
       <header className="user__header">
@@ -35,7 +51,7 @@ export const UserStats = ({ match }) => {
       </header>
 
       <main className="user__main">
-      <div className="user__main-nav">
+      <div className="user__main-nav2">
           <Link
             to="/"
             className="user__main-home"
@@ -61,7 +77,7 @@ export const UserStats = ({ match }) => {
         </div>
 
         <div className="user__main-block">
-          <h2 className="user__main-title">
+          <h2 className="user__main-title2">
             {user.first_name}
             {' '}
             {user.last_name}
@@ -92,8 +108,8 @@ export const UserStats = ({ match }) => {
           </div>
         </div>
 
-        <h3 className="user__main-title2">Clicks</h3>
-        <LineChart width={1200} height={300} data={clicks} margin={{ top: 24, right: 10, bottom: 5, left: 0 }}>
+        <h3 className="user__main-titleM">Clicks</h3>
+        <LineChart width={screen} height={300} data={clicks} margin={{ top: 24, right: 10, bottom: 5, left: 0 }}>
           <Line type="monotone" dataKey="clicks" stroke="#3a80ba" />
           <CartesianGrid stroke="#f1f1f1" />
           <XAxis dataKey="name" />
@@ -101,8 +117,8 @@ export const UserStats = ({ match }) => {
           <Tooltip />
         </LineChart>
 
-        <h3 className="user__main-title2">Views</h3>
-        <LineChart width={1200} height={300} data={views} margin={{ top: 24, right: 10, bottom: 5, left: 0 }}>
+        <h3 className="user__main-titleM">Views</h3>
+        <LineChart width={screen} height={300} data={views} margin={{ top: 24, right: 10, bottom: 5, left: 0 }}>
           <Line type="monotone" dataKey="views" stroke="#3a80ba" />
           <CartesianGrid stroke="#f1f1f1" />
           <XAxis dataKey="name" />
@@ -112,9 +128,11 @@ export const UserStats = ({ match }) => {
       </main>
 
       <footer className="user__footer">
-        <h3 className="user__footer-title">AppCo</h3>
-        <p className="user__footer-paragraph">All rights reserved by ThemeTags</p>
-        <p className="user__footer-paragraph">Copyrights © 2019.</p>
+        <div className="user__footer-block">
+          <h3 className="user__footer-title">AppCo</h3>
+          <p className="user__footer-paragraph">All rights reserved by ThemeTags</p>
+          <p className="user__footer-paragraph">Copyrights © 2019.</p>
+        </div>
       </footer>
     </>
   );

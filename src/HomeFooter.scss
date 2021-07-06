@@ -3,8 +3,6 @@
   &__footer {
     margin-top: 128px;
   
-    position: relative;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,6 +34,10 @@
     width: 579px;
     height: 64px;
   }
+
+  &__footer-disable {
+    position: relative;
+  }
   
   &__footer-field {
     margin-top: 26px;
@@ -62,7 +64,7 @@
   &__footer-button {
     position: absolute;
     top: 30px;
-    left: 830px;
+    right: 4px;
   
     text-align: center;
     font-size: 16px;
@@ -107,6 +109,34 @@
     &__footer {
       background-image: none;
       background-color: #3a80ba;
+    }
+  }
+
+  @media (max-width: 1235px) {
+    &__footer-content {
+      gap: 50px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    &__footer-title {
+      display: none;
+    }
+  }
+
+  @media (max-width: 581px) {
+    &__footer-field {
+      width: 379px;
+    }
+  }
+
+  @media (max-width: 384px) {
+    &__footer-field {
+      width: 259px;
+    }
+
+    &__footer-button {
+      width: 86px;
     }
   }
 }
