@@ -12,6 +12,7 @@
     background-image: url(./images/Footer.png);
     background-repeat: no-repeat;
     height: 183px;
+    width: 100%;
   }
   
   &__footer-active,
@@ -61,7 +62,6 @@
   &__footer-button {
     position: absolute;
     top: 30px;
-    right: 434px;
   
     text-align: center;
     font-size: 16px;
@@ -100,5 +100,12 @@
     font-size: 16px;
     line-height: 142%;
     color: #fff;
+  }
+
+  @media screen and (min-width: 1441px) {
+    &__footer {
+      background-image: none;
+      background-color: #3a80ba;
+    }
   }
 }
