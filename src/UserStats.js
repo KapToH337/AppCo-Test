@@ -42,8 +42,6 @@ export const UserStats = ({ match }) => {
     screen = 1000;
   }
 
-  console.log(window.innerWidth, screen);
-
   return (
     <>
       <header className="user__header">
